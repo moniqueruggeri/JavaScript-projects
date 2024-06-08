@@ -7,9 +7,32 @@ body {
     color: white;
     font-family: "Nunito Sans", sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 24px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.text {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 24px;
+}
+
+.text img {
+    height: 48px;
 }
 
 #birthday-form {
@@ -38,12 +61,13 @@ body {
     text-transform: uppercase;
     font-weight: 900;
     font-family: "Nunito Sans", sans-serif;
-
 }
 
 .clock {
     display: none;
+    flex-direction: column;
     gap: 32px;
+    margin: 24px;
 }
 
 .clock div {
@@ -67,3 +91,16 @@ body {
     font-size: 24px;
 }
 
+@media screen and (min-width: 768px){
+    .modal {
+        width: 50%;
+    }
+    
+    .clock {
+        flex-direction: row;
+    }
+
+    .text {
+        flex-direction: row;
+    }
+}

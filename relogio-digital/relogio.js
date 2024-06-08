@@ -1,6 +1,7 @@
     const clock = document.querySelector(".clock")
     const birthdayForm = document.querySelector("#birthday-form");
     const modal = document.querySelector(".modal");
+    const text = document.querySelector(".text");
     
     birthdayForm.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -10,6 +11,7 @@
             const birthday = new Date(birthdayInput);
             modal.style.display = "none";
             clock.style.display = "flex";
+            text.style.display = "flex";
             startCountDown(birthday);
         }
 
