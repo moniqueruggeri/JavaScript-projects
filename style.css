@@ -38,6 +38,12 @@ body {
     border-radius: 16px;
 }
 
+
+/* Seleciona todos os filhos da div com id myDiv a partir do terceiro e os oculta */
+.projects-list > *:nth-child(n+3){
+    display:none;
+}
+
 .main-container h1 {
     font-size: 48px;
     font-weight: 900;
